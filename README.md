@@ -1,26 +1,9 @@
 # EgoBlur Demo
-This repository contains demo of [EgoBlur models](https://www.projectaria.com/tools/egoblur) with visualizations.
 
 
-## Installation
+## howto use
+python script/demo_ego_blur.py --face_model_path ./ego_blur_face.jit --input_image_path demo_assets/test_image.jpg --output_image_path ./output.jpg
 
-This code requires `conda>=23.1.0` to install dependencies and create a virtual environment to execute the code in. Please follow the instructions [here](https://docs.anaconda.com/free/anaconda/install/index.html) to install Anaconda for your machine.
-
-We list our dependencies in `environment.yaml` file. To install the dependencies and create the env run:
-```
-conda env create --file=environment.yaml
-
-# After installation, check pytorch.
-conda activate ego_blur
-python
->>> import torch
->>> torch.__version__
-'1.12.1'
->>> torch.cuda.is_available()
-True
-```
-
-Please note that this code can run on both CPU and GPU but installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 
 ## Getting Started
 First download the zipped models from given links. Then the models can be used as input/s to CLI.
